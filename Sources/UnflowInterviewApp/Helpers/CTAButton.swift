@@ -14,5 +14,6 @@ struct CTAButton: View {
                 .foregroundColor(.white)
                 .cornerRadius(15)
         }
+        .buttonStyle(PlainButtonStyle())
     }
 }
