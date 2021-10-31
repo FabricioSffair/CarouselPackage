@@ -1,10 +1,3 @@
-//
-//  PageView.swift
-//  
-//
-//  Created by Fabrício Sperotto Sffair on 2021-10-29.
-//
-
 import SwiftUI
 
 struct PageView: View {
@@ -32,6 +25,7 @@ struct PageView: View {
                     .multilineTextAlignment(.center)
                     .padding(.bottom, 64)
             }
+            .padding(.horizontal)
         }
     }
 }
