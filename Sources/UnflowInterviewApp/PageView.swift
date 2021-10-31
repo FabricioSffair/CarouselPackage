@@ -14,23 +14,25 @@ struct PageView: View {
     var text: String
     
     var body: some View {
-        VStack {
-            Image(image)
-                .resizable()
-                .scaledToFit()
-                .padding(.bottom, 50)
-            
-            Text(title)
-                .font(.system(size: 30, design: .rounded))
-                .fontWeight(.heavy)
-                .padding(.bottom, 20)
-            
-            Text(text)
-                .font(.system(size: 17, design: .rounded))
-                .fontWeight(.medium)
-                .multilineTextAlignment(.center)
+        ScrollView {
+            VStack {
+                Image(image)
+                    .resizable()
+                    .scaledToFit()
+                    .padding(.bottom, 15)
+                
+                Text(title)
+                    .font(.system(size: 30, design: .rounded))
+                    .fontWeight(.heavy)
+                    .padding(.bottom, 15)
+                
+                Text(text)
+                    .font(.system(size: 17, design: .rounded))
+                    .fontWeight(.medium)
+                    .multilineTextAlignment(.center)
+                    .padding(.bottom, 64)
+            }
         }
-    .padding()
     }
 }
 
